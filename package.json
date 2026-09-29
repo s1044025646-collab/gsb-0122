@@ -1,0 +1,20 @@
+{
+  "name": "gaoxiao-toudang",
+  "version": "1.0.0",
+  "private": true,
+  "description": "高校志愿投档与录取复核后端（TypeScript + Node.js 内置 SQLite），仅含 API/CLI/虚构夹具/自动化测试",
+  "type": "module",
+  "engines": {
+    "node": ">=23.4.0"
+  },
+  "scripts": {
+    "generate-fixtures": "node --experimental-sqlite src/fixtures/generate.ts",
+    "demo": "node --experimental-sqlite scripts/demo.ts",
+    "start": "node --experimental-sqlite src/cli/index.ts server start --detach",
+    "stop": "node --experimental-sqlite src/cli/index.ts server stop",
+    "status": "node --experimental-sqlite src/cli/index.ts server status",
+    "test": "node --experimental-sqlite --test test/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "license": "UNLICENSED"
+}
