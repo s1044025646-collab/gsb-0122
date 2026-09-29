@@ -1,0 +1,25 @@
+{
+  "source": "示例招办导入",
+  "majors": [
+    { "code": "A", "name": "计算机科学", "capacity": 2 },
+    { "code": "B", "name": "临床医学", "capacity": 1 },
+    { "code": "Z", "name": "停招专业", "capacity": 0 }
+  ],
+  "students": [
+    {
+      "anon_code": "S1",
+      "score": 91,
+      "metrics": { "math": 95, "physics": 90 },
+      "qualifications": { "B": { "qualified": false, "reason": "体检结论受限" } }
+    },
+    { "anon_code": "S2", "score": 88, "metrics": { "math": 80, "physics": 85 } },
+    { "anon_code": "S3", "score": 88, "metrics": { "math": 99, "physics": 70 } },
+    { "anon_code": "S4", "score": 70 }
+  ],
+  "applications": [
+    { "anon_code": "S1", "ordinals": ["A", "B"] },
+    { "anon_code": "S2", "ordinals": ["B", "A"] },
+    { "anon_code": "S3", "ordinals": ["B", "A"] },
+    { "anon_code": "S4", "ordinals": ["Z", "A"] }
+  ]
+}

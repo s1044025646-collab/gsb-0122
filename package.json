@@ -1,0 +1,18 @@
+{
+  "name": "gaokao-admission-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "description": "高校志愿投档与录取复核后端（本地、虚构数据、仅 API/CLI）",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/cli.js serve",
+    "demo": "node dist/demo.js",
+    "fixture": "node dist/cli.js fixture",
+    "test": "tsc -p tsconfig.json && node --test --test-concurrency=1 \"dist/test/*.test.js\""
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.0",
+    "typescript": "^5.6.0"
+  }
+}

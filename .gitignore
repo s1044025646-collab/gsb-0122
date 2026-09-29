@@ -1,0 +1,8 @@
+node_modules/
+dist/
+data/
+*.log
+*.db
+*.db-wal
+*.db-shm
+server.port
